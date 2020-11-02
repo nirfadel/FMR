@@ -1,0 +1,11 @@
+﻿
+
+button{
+    cursor:pointer;
+}
+
+.delete_celeb {
+    width: 24px;
+    height:24px;
+    cursor:pointer;
+}

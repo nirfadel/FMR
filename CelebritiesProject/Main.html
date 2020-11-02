@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Celebs table</title>
+    <link href="/style/StyleSheet1.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/celebs.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            GetCelebs();
+        });
+    </script>
+    <div class="container" >
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Celebrities</h3>
+                <div><button onclick="clearCelebs()" title="אפס סלבס">אפס</button></div>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover" id="celebs-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">שם</th>
+                            <th scope="col">תאריך לידה</th>
+                            <th scope="col">מין</th>
+                            <th scope="col">תפקיד</th>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
